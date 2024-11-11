@@ -4,3 +4,4 @@
 
 	// Create instance/object from class
 	$app = new App(); 
+?>
