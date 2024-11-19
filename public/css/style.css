@@ -60,6 +60,17 @@ body, html {
     transition: all 0.3s ease;
 }
 
+.type-picker{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-containers{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar-menu {

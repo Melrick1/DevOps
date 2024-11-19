@@ -6,7 +6,7 @@
     // define database config
     
     define("HOST_DB", "localhost");
-    define("NAME_DB", "db_unklab");
+    define("NAME_DB", "db_apotek");
     define("USER_DB", "root");
     define("PASS_DB", "admin");
 

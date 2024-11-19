@@ -5,7 +5,7 @@
 	<meta charset="UTF=8">
 	<title><?php echo $data['title']; ?></title>
 	<link href="<?php echo APP_PATH; ?>/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="<link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">">
 
 	<!-- DataTables CSS -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css">
@@ -17,14 +17,12 @@
 <body>
 	<nav class="navbar">
 		<div class="navbar-logo">
-			<a href="#">Unklab</a>
+			<a href="#">Apotek</a>
 		</div>
 		<ul class="navbar-menu">
-			<li><a href="<?= APP_PATH;?>/Home/attendance">Attandance</a></li>
-			<li><a href="<?= APP_PATH;?>/Home/classes">Classes</a></li>
-			<li><a href="<?= APP_PATH;?>/Home/history">History</a></li>
-			<li><a href="<?= APP_PATH;?>/Home/operator">Operator</a></li>
-			<li><a href="<?= APP_PATH;?>/Home/students">Students</a></li>
+			<li><a href="<?= APP_PATH;?>/Home/staff">Staff</a></li>
+			<li><a href="<?= APP_PATH;?>/Home/obat">Obat</a></li>
+			<li><a href="<?= APP_PATH;?>/Home/add">Add</a></li>
 		</ul>
 		<div class="navbar-toggle">
 			<span></span>
