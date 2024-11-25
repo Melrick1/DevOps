@@ -1,5 +1,5 @@
 <?php
-class Viewobat_model {
+class Viewobat_Model {
     private $db;
 
     public function __construct() {

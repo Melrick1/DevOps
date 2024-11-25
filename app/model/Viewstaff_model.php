@@ -1,5 +1,5 @@
 <?php
-class Viewstaff_model {
+class Viewstaff_Model {
     private $db;
 
     public function __construct() {

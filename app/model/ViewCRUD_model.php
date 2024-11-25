@@ -1,5 +1,5 @@
 <?php
-class ViewCRUD_model {
+class ViewCRUD_Model {
     private $db;
 
     public function __construct() {
