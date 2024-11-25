@@ -1,7 +1,7 @@
 <?php
 
 	// define path constants
-    define("APP_PATH", 'http://www.melrick.online/DevOps/public');
+    define("APP_PATH", 'http://www.melrick.online');
 
     // define database config
     
