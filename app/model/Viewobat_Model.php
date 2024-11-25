@@ -15,8 +15,8 @@ class Viewobat_Model {
     public function getAllDataModel() {
         // Get the connection and run the query
         $connection = $this->db->getConnection();
-
         $result = $connection->query("SELECT * FROM tbl_obat;");
+        
         $this->db->closeConnection(); // Close the connection after query
 
         if ($result->num_rows > 0) {

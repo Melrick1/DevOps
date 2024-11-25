@@ -30,7 +30,7 @@ class ViewCRUD_Model {
     public function UpdateObatDataModel($nama, $expire_date, $jenis, $stock) {
         $query = "UPDATE tbl_obat SET Expire_Date = ?, Jenis = ?, Stock = ? WHERE Nama = ?";
         $stmt = $this->db->getConnection()->prepare($query);
-        $stmt->bind_param("sssi", $expire_date, $jenis, $stock, $nama);
+        $stmt->bind_param("ssis", $expire_date, $jenis, $stock, $nama);
         $result = $stmt->execute();
         $stmt->close();
         return $result;
