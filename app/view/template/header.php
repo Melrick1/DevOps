@@ -17,7 +17,7 @@
 <body>
 	<nav class="navbar">
 		<div class="navbar-logo">
-			<a href="#">Apotek</a>
+			<a href="#">Melrick</a>
 		</div>
 		<ul class="navbar-menu">
 			<li><a href="<?= APP_PATH;?>/Home/staff">Staff</a></li>
