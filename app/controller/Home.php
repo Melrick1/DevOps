@@ -18,7 +18,7 @@ class Home extends Controller{
             // Process the form data
             $arr_data['message'] = $this->processForm($type, $action, $_POST);
         }
-        $arr_data['staff'] = $this->logic("Viewstaff_model")->getAllDataModel();
+        $arr_data['staff'] = $this->logic("Viewstaff_Model")->getAllDataModel();
         
         $this->display('template/header', $arr_data);
         $this->display('home/viewstaff', $arr_data);
@@ -38,7 +38,7 @@ class Home extends Controller{
             // Process the form data
             $arr_data['message'] = $this->processForm($type, $action, $_POST);
         }
-        $arr_data['obat'] = $this->logic("Viewobat_model")->getAllDataModel();
+        $arr_data['obat'] = $this->logic("Viewobat_Model")->getAllDataModel();
 
         $this->display('template/header', $arr_data);
         $this->display('home/viewobat', $arr_data);
@@ -129,7 +129,7 @@ class Home extends Controller{
     }
     private function insertObat($nama, $expire_date, $jenis, $stock) {
         if ($nama && $expire_date && $jenis && $stock) {
-            $model = $this->logic("ViewCRUD_model");
+            $model = $this->logic("ViewCRUD_Model");
             $success = $model->InsertObatDataModel($nama, $expire_date, $jenis, $stock);
             return $success ? "Obat data successfully inserted!" : "Failed to insert obat data.";
         }
@@ -148,7 +148,7 @@ class Home extends Controller{
     }
     private function updateObat($nama, $expire_date, $jenis, $stock) {
         if ($nama) {
-            $model = $this->logic("ViewCRUD_model");
+            $model = $this->logic("ViewCRUD_Model");
             $success = $model->UpdateObatDataModel($nama, $expire_date, $jenis, $stock);
             return $success ? "Obat data successfully updated!" : "Failed to update obat data.";
         }
@@ -167,7 +167,7 @@ class Home extends Controller{
     }
     private function deleteObat($id) {
         if ($id) {
-            $model = $this->logic("Viewobat_model");
+            $model = $this->logic("Viewobat_Model");
             $success = $model->DeleteObatDataModel($id);
             return $success ? "Obat data successfully deleted!" : "Failed to delete obat data.";
         }
