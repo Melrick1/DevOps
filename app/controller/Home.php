@@ -147,6 +147,10 @@ class Home extends Controller{
         return "Please provide a name for updating staff.";
     }
     private function updateObat($nama, $expire_date, $jenis, $stock) {
+        if (empty($nama)) {
+            return "Please provide a valid name for updating obat.";
+        }
+        
         if ($nama) {
             $model = $this->logic("ViewCRUD_Model");
             $success = $model->UpdateObatDataModel($nama, $expire_date, $jenis, $stock);
