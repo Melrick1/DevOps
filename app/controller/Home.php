@@ -100,7 +100,7 @@ class Home extends Controller{
     private function processObatForm($action, $data) {
         // Extract obat data
         $id = $data['id'] ?? '';
-        $nama = $data['nama'] ?? '';
+        $nama = $data['namaObat'] ?? '';
         $expire_date = $data['expire_date'] ?? '';
         $jenis = $data['jenis'] ?? '';
         $stock = $data['stock'] ?? '';
@@ -150,7 +150,7 @@ class Home extends Controller{
         if (empty($nama)) {
             return "Please provide a valid name for updating obat.";
         }
-        
+
         if ($nama) {
             $model = $this->logic("ViewCRUD_Model");
             $success = $model->UpdateObatDataModel($nama, $expire_date, $jenis, $stock);

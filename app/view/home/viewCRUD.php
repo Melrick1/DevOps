@@ -38,8 +38,8 @@
     <form action="add" method="POST">
         <input type="hidden" name="type" value="Obat">
         
-        <label for="nama">Nama Obat:</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
+        <label for="namaObat">Nama Obat:</label><br>
+        <input type="text" id="namaObat" name="namaObat" required><br><br>
 
         <label for="expire_date">Expire Date:</label><br>
         <input type="text" id="expire_date" name="expire_date" required><br><br>
